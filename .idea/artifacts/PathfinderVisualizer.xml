@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="PathfinderVisualizer">
+    <output-path>$PROJECT_DIR$/out/artifacts/PathfinderVisualizer</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="Main" />
+        <option name="description" value="PathfinderVisualizer is a software developed by  DevThrone Inc. Is to be used as a learning tool for the pathfinding algorithms. The software is free and protected by DevThrone license" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="windowsIcon" value="$PROJECT_DIR$/src/_gallery/PV.ico" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="nativeBundle" value="all" />
+        <option name="title" value="PathfinderVisualizer" />
+        <option name="vendor" value="DevThrone Inc" />
+        <option name="version" value="2021.4" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="PathfinderVisualizer.jar">
+        <element id="module-output" name="PathfinderVisualizer" />
+      </element>
+    </root>
+  </artifact>
+</component>

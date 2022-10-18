@@ -1,0 +1,80 @@
+.start {
+    -fx-border-color: blue;
+    -fx-border-width: 3px;
+    -fx-background-color:rgba(0, 0, 255, 1.0);
+}
+.goal {
+    -fx-border-color: red;
+    -fx-border-width: 3px;
+    -fx-background-color:rgba(255, 0, 0, 1.0);
+}
+.open {
+    -fx-background-color: rgba(132, 255, 138,1.0);
+}
+.closed {
+    -fx-background-color: rgba(253, 90, 90,1.0);
+}
+.toolbar {
+    -fx-background-color: rgba(255,255,255,1.0);
+    -fx-text-fill:black;
+}
+.btnFindPath {
+     -fx-background-color: #000000;
+    -fx-text-fill:white;
+}
+.btnExit {
+     -fx-background-color: #FF0000;
+    -fx-text-fill:white;
+}
+.speedLabel {
+    -fx-text-fill:#A91617;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
+}
+.descriptionLabel {
+    -fx-text-fill:blue;
+    -fx-font-size: 12;
+    -fx-font-style:italic;
+
+}
+.btnFindPath:hover {
+   -fx-background-color: #A91617;
+       -fx-text-fill:white;
+}
+/* important order: path must be after open and closed because a cell can be both. the last in the css overlaps the previous styles, no matter how you add them to the styleclass list */
+.path {
+    -fx-background-color:rgba(255, 255, 0, 1.0);
+}
+/* important order: traversable must be after path because a cell can be both. the last in the css overlaps the previous styles, no matter how you add them to the styleclass list. traversable overrides path when you paint over a path */
+.traversable {
+    -fx-border-color: black;
+    -fx-border-width: 0.2px;
+}
+/* important order: obstacle must be after path because a cell can be both. the last in the css overlaps the previous styles, no matter how you add them to the styleclass list. obstacle overrides path when you paint over a path */
+.obstacle {
+    -fx-border-color: rgba(0, 0, 0, 1.0);
+    -fx-border-width: 0.5px;
+    -fx-background-color:rgba(0, 0, 0, 1.0);
+}
+.label-f {
+	-fx-font-size: 12;
+	-fx-font-weight: bold;
+}
+.labelGoals {
+	-fx-font-size: 12;
+	-fx-font-weight: bold;
+	-fx-text-fill: white;
+}
+.label-g {
+	-fx-font-size: 10;
+}
+.label-h {
+	-fx-font-size: 10;
+}
+.footer{
+    -fx-background-color: #A91617;
+}
+.footer-label{
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
